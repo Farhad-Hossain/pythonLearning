@@ -182,8 +182,43 @@
 # --------------------
 
 # START :: Deep Copy
+# import numpy as np
+# a = np.array([
+#     [1,2,3,4],
+#     [5,6,7,8]
+# ])
+
+
+# START :: ------
+# import numpy as np
+# a = np.arange(10) ** 3
+# print(a[::-1])
+# def f(x, y):
+#     return 10 * x + y
+# b = np.fromfunction(f, (10, 8), dtype=int)
+# print(b)
+# print(b[2, 3])
+# print(b[0:5, 1])
+# print(b[:, 1])
+# print(b[1:3, :])
+# print(b[-1])
+
+# for row in b:
+#     print(row)
+# list = []
+# for element in b.flat:
+#     list.append(element)
+# print(list)
+#  END ---------------
+
+# START :: Deep Copy
+# import numpy as np
+# a = np.arange(int(1e8))
+# print( 1e3 )
+#  END -----
+
+# START :: Functions and methods overview
 import numpy as np
-a = np.array([
-    [1,2,3,4],
-    [5,6,7,8]
-])
+a = np.arange(30)
+b = a.reshape((2, -1, 3))
+print(b)
